@@ -2,6 +2,7 @@ file = open("advent23_4.txt", "r").readlines()
 total_points = 0 
 cards = [1] * len(file)
 
+#part1
 for i, line in enumerate(file):
     line = line.strip().split(":")
     nums = line[1].strip().split("|")
@@ -26,6 +27,7 @@ for i, line in enumerate(file):
 
         total_points += multiplier
 
+#part2
     n = len(same_nums)
     for j in range(i + 1, min(i + 1 + n, len(file))):
         cards[j] += cards[i]
