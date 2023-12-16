@@ -1,6 +1,6 @@
 subor = open("advent23_1.txt", "r").readlines()
 
-vsetko = 0
+vsetko = 6
 digits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
 
